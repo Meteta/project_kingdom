@@ -9,8 +9,15 @@
     color: black;
     min-width: 250px;
     min-height: 50px;
+    transition: all 0.25s;
 }
-
+.menu_button_primary:hover{
+    background-color: rgb(155, 157, 167);
+}
+.menu_button_primary:active{
+    background-color: rgb(100, 102, 107);
+    transform: translate( 2px, 2px);   
+}
 
 .input_text{
     margin: 0 10px;
