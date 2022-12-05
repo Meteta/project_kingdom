@@ -1,0 +1,26 @@
+.wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.display_area{
+    /* Center */
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+
+    /* Apply Border and Size */
+    border: 5px white solid;
+    border-radius: 15px;
+    width: 80%;
+    height: 80%;
+}
+
+
+.title{
+    margin-top: 1%;
+    margin-left: 10%;
+    color: white;
+}
+

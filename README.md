@@ -1,3 +1,7 @@
+# Project Kingdom
+
+This is a personal project to help me advance my skills and try some new things. We'll see how long this lasts
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

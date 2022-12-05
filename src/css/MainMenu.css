@@ -1,0 +1,13 @@
+@import "stylesheet.css";
+
+.menu_main{
+    /* Center The Main Menu */
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    
+    /* Align in a column */
+    display: flex;
+    flex-direction: column;
+}
