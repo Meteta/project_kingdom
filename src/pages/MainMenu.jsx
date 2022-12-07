@@ -6,7 +6,7 @@ function MainMenu() {
     return (
       <div className="menu_main">
         <h1>Project Kingdom</h1>
-        <Link to="/createKingdom" className="menu_button_primary">Begin Anew</Link>
+        <Link to={{pathname:"/overview" , state: { newGame: true }}} className="menu_button_primary">Begin Anew</Link>
         <Link to="/overview" className="menu_button_primary">Return to the Throne</Link>
       </div>
     );

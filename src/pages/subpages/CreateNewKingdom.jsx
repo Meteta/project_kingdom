@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import "../css/CreateNewKingdom.css";
+import "../../css/CreateNewKingdom.css";
 import { Link } from 'react-router-dom';
-import kingdomNames from '../components/lists/kingdomNames';
+import kingdomNames from '../../components/lists/kingdomNames';
 
 
 class CreateNewKingdom extends React.Component {
@@ -10,7 +10,6 @@ class CreateNewKingdom extends React.Component {
         super(props);
         this.state = {
             placeholderKingdom: kingdomNames[Math.floor(Math.random() * kingdomNames.length)],
-            kingdomName: ""
         }
     }
     
@@ -18,12 +17,6 @@ class CreateNewKingdom extends React.Component {
     placeholderReset = () => {
         this.setState({ placeholderKingdom: kingdomNames[Math.floor(Math.random() * kingdomNames.length)] })
     }
-
-    setKingdomName = () => {
-        console.log(this.state.kingdomName);
-        this.setState({ kingdomName: document.getElementById("kingdomName").value ?? this.placeholderKingdom})
-    }
-    
 
     render(){
     return (
@@ -35,7 +28,7 @@ class CreateNewKingdom extends React.Component {
             <button onClick={ this.placeholderReset }>Randomize</button>
         </label>
 
-        <Link to={{pathname:'/overview', state: this.state}} className='menu_button_primary' onClick={ this.setKingdomName }>Found Kingdom</Link>
+        <button className='menu_button_primary' onClick={ () => this.props.setKingdomName(this.state.placeholderKingdom) }>Found Kingdom</button>
       </div>
     );
   }

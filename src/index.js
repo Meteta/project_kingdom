@@ -4,7 +4,6 @@ import "./index.css"
 import Layout from "./Layout";
 import MainMenu from "./pages/MainMenu";
 import Overview from "./pages/Overview";
-import CreateNewKingdom from "./pages/CreateNewKingdom";
 import React from "react";
 
 
@@ -24,7 +23,6 @@ export default class App extends React.Component {
             <Route index element={<MainMenu />} />
             <Route path="mainMenu" element={<MainMenu />} />
             <Route path="overview" element={<Overview />} />
-            <Route path="createKingdom" element={<CreateNewKingdom/>} />
           </Route>
         </Routes>
       </BrowserRouter>
