@@ -1,0 +1,30 @@
+:root{
+    --tranSpeed: 0.225s;
+}
+.wrapper_POP{
+    position: absolute;
+    background-color: rgb(32, 39, 60);
+    border-radius: 5px;
+    min-width: 200px;
+    cursor: move;
+}
+
+.popTitle{
+    margin-left: 20px;
+}
+.popReadOut{
+    margin-right: 50px;
+    transition: all 1s ease-in-out;
+}
+
+.popAccordian{
+    transition: font-size var(--tranSpeed) ease-in-out, opacity var(--tranSpeed) ease-in-out var(--tranSpeed);
+    font-size:"unset"; 
+    opacity: 1;
+}
+
+.popAccordianHidden{
+    transition: font-size var(--tranSpeed) ease-in-out var(--tranSpeed), opacity var(--tranSpeed) ease-in-out;
+    font-size: 0; 
+    opacity: 0;
+}
